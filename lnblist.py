@@ -9,4 +9,4 @@ b=1
 while(b<5):
         L3.append(L2[b])
         b=b+2
-print(L3)
+print("L3:",L3)
