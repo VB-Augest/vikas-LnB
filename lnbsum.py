@@ -1,10 +1,8 @@
 L=[]
 for i in range (5):
     x=int(input("enter no-"))
-    L.insert(i,x)
+    L.append(x)
 print("Numbers you entered:",L)
-for b in L:
-    if b<9:
-        L.remove(b)
-print("removed number less then 9",L)
-print("sum of the remaining Numbers  ",sum(L))
+K = [x for x in L if int(x) >9]
+print("removed number less then 9: ",K)
+print("sum of the remaining Numbers: ",sum(K))
